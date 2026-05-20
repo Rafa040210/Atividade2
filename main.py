@@ -2,12 +2,15 @@ from conta import Conta
 
 obj_conta = Conta(float(input("Qual é o saldo da conta? ")))
 
-#EXIBIR UM MENU
 input("Escolha uma opção: ")
+
 print("---- MENU DE OPÇÕES ----")
 print("1 - Sacar")
 print("2 - Deposita")
 print("3 - Rendimento")
+opcao = int(input("Escolha uma opção: "))
+
+
 if opcao == 1:
     obj_conta.saca(float(input("Qual o valor a sacar: ")))
     print("Seu valor na conta é:", obj_conta.saldo)
