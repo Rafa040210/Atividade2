@@ -2,7 +2,6 @@ from conta import Conta
 
 obj_conta = Conta(float(input("Qual é o saldo da conta? ")))
 
-input("Escolha uma opção: ")
 
 print("---- MENU DE OPÇÕES ----")
 print("1 - Sacar")
@@ -18,5 +17,4 @@ elif opcao == 2:
     obj_conta.deposita(float(input("Qual o valor a deposita: ")))
     print("Seu valor na conta é:", obj_conta.saldo)
 elif opcao == 3:
-    obj_conta.rendimento(float(input("Qual o valor do rendimento: ")))
     print("Seu valor na conta é:", obj_conta.saldo)
